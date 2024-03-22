@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Titan+One&display=swap");
+header {
+  margin: auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+header nav .barra {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  padding: 12px;
+  height: 120px;
+}
+header nav .menu {
+  display: flex;
+}
+header nav .menu li {
+  height: 200px;
+  padding-left: 30px;
+}
+header nav .menu li a {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  color: white;
+}
+header nav .menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: 0.15s ease-in-out;
+}
+header nav .menu li a:hover:after {
+  width: 100%;
+}
+
+.abierto, .cerrar {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 200%;
+  right: 20px;
+  display: none;
+  transform: translateY(-50%);
+}
+
+#check {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/22/training-828726_1280.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px 6px 10px;
+  text-decoration: none;
+}
+footer a {
+  font-size: 20px;
+  letter-spacing: 10px;
+  color: white;
+}
+
+main .inicio {
+  color: white;
+  padding: 20px;
+}
+main .inicio h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 30px;
+  font-size: 55px;
+}
+main .inicio p {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+}
+main .contratar {
+  text-align: center;
+  padding: 30px;
+}
+main .contratar a {
+  color: black;
+  background-color: rgb(238, 255, 0);
+  font-size: 13px;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 300ms;
+}
+main .contratar a:hover {
+  background-color: grey;
+  color: white;
+  transform: scale(1, 15);
+}
+
+.secciones {
+  display: grid;
+  text-align: center;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  padding: 50px;
+}
+.secciones .plan {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.secciones .seccion1 {
+  letter-spacing: 2px;
+  padding: 30px;
+  font-weight: bolder;
+}
+.secciones .seccion1 div {
+  padding: 10px;
+}
+.secciones .seccion1 div a {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(238, 255, 0);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-size: 10px;
+  transition: all 300ms;
+}
+.secciones .seccion1 div a:hover {
+  background-color: grey;
+  color: white;
+  transform: scale(0, 5);
+}
+
+.redes {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-size: 55px;
+  color: white;
+}
+
+.redes1 {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 70px;
+  padding: 40px;
+  text-align: center;
+  letter-spacing: 50px;
+  font-weight: bolder;
+  margin-top: 80px;
+  margin-right: 100px;
+}
+.redes1 a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 20px;
+  font-size: 20px;
+}
+.redes1 i {
+  padding: 25px;
+  color: rgb(238, 255, 0);
+}
+
+.nosotros {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 50px;
+  font-size: 30px;
+}
+.nosotros a {
+  padding: 40px 80px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: rgb(238, 255, 0);
+  transition: all 300ms;
+}
+.nosotros a:hover {
+  background-color: grey;
+  color: white;
+  transform: scale(1, 15);
+}
+
+.nosotros1 {
+  font-weight: bolder;
+  font-size: 35px;
+  color: rgb(238, 255, 0);
+}
+
+.alimentacion {
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  justify-content: center;
+  color: white;
+  height: 100px;
+  font-size: 30px;
+}
+.alimentacion a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.apple {
+  color: rgb(238, 255, 0);
+  text-align: center;
+  font-size: 100px;
+  height: 200px;
+  letter-spacing: 50px;
+}
+
+@media (max-width: 727px) {
+  h1 {
+    height: 0px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 15px;
+    width: 100%;
+    height: 0px;
+    position: fixed;
+    top: 130px;
+    right: -200%;
+    z-index: 200%;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 10px;
+  }
+  .menu li a {
+    padding: 5px;
+  }
+  label {
+    display: block;
+    height: 520px;
+    justify-content: right;
+  }
+  .abierto {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0px;
+  }
+  main {
+    display: block;
+  }
+  main .inicio #page1 {
+    margin-right: 30px;
+    text-align: center;
+    font-size: 20px;
+  }
+  main .inicio #page1 p {
+    margin-right: 30px;
+    text-align: center;
+  }
+  main .inicio a {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  main .inicio .cambio {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+  #sec1 {
+    font-size: 30px;
+  }
+  .seccion {
+    font-size: 20px;
+  }
+  .redes {
+    text-align: center;
+    display: block;
+    font-size: 35px;
+  }
+  .redes1 {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .redes1 a {
+    text-align: center;
+  }
+}
+@media (min-width: 728px) and (max-width: 1275px) {
+  h1 {
+    text-align: end;
+  }
+  .seccion {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .seccion1 div {
+    grid-column: auto;
+  }
+}
+@media (max-width: 440px) {
+  h1 {
+    text-align: center;
+  }
+  main #page1 {
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+  }
+  main #page1 p {
+    text-align: center;
+    margin: 5px;
+  }
+  main .cambio {
+    display: block;
+    margin: 0px;
+    font-size: 15px;
+  }
+  main .redes {
+    font-size: 20px;
+  }
+  main .redes1 a {
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  main .nosotros a {
+    display: block;
+    font-size: 20px;
+    padding: 30px 20px;
+  }
+  #sec1 {
+    font-size: 20px;
+  }
+}
+.apple {
+  display: block;
+}
+
+@media (max-width: 650px) {
+  main {
+    display: block;
+  }
+  main #page1 {
+    font-size: 15px;
+  }
+  main .redes {
+    display: block;
+    justify-content: center;
+    font-size: 25px;
+  }
+  main .redes1 {
+    display: block;
+    text-align: center;
+  }
+  main .redes1 i {
+    font-size: 50px;
+  }
+  .menu li a {
+    font-size: 10px;
+  }
+  .alimentacion {
+    padding: 40px;
+  }
+  .apple {
+    font-size: 60px;
+    display: block;
+    margin: 40px;
+  }
+}
+@media (min-width: 1055px) {
+  #sec1 {
+    font-size: 50px;
+    margin-bottom: 100px;
+    height: 0px;
+  }
+  .seccion {
+    letter-spacing: 2px;
+  }
+  .quince {
+    text-align: center;
+    margin-right: 850px;
+    font-size: 20px;
+  }
+  .treinta {
+    text-align: center;
+    margin-top: -260px;
+    font-size: 20px;
+  }
+  .trimestral {
+    text-align: center;
+    margin-top: -260px;
+    margin-left: 900px;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
