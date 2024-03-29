@@ -1,0 +1,91 @@
+
+.alimentacion {
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+    justify-content: center;
+    color: map-get($colores , color-texto );
+    height: 100px;
+    font-size: 30px;
+    a{
+        color: map-get($colores , color-texto );
+        font-weight: bolder;
+        text-decoration: none;
+    }
+}
+.apple {
+    color: map-get($colores, color-fondo );
+    text-align: center;
+    font-size: 100px;
+    height: 200px;
+    letter-spacing: 50px;
+  }
+
+  #seccion3{
+    font-family: "Josefin Sans", sans-serif;
+    color: map-get($colores , color-texto );
+    font-size: 40px;
+    display: block;
+    height: 300px;
+    padding: 30px;
+    margin-top: 500px;
+    text-align: center;
+    
+    .guia1{
+    padding: 20px;
+    margin-top: 100px;
+p{
+  text-overflow: clip;
+}
+    }
+    a{
+      color: map-get($colores, color-terciario );
+      background-color: map-get($colores, color-fondo );
+      font-size: 13px;
+      font-family: "Josefin Sans", sans-serif;
+      text-decoration: none;
+      padding: 20px 40px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 300ms;
+      margin-top: 1000px;
+      &:hover{
+          background-color: map-get($colores, color-secundario );
+          color: map-get($colores , color-texto );
+          transform: scale(1,15);
+      }
+  }
+  }
+
+  #seccion4{
+    font-family: "Josefin Sans", sans-serif;
+    color: map-get($colores , color-texto );
+    font-size: 40px;
+    display: block;
+    height: 900px;
+    padding: 30px;
+    margin-top: 500px;
+    text-align: center;
+    .guia2{
+      padding: 30px;
+margin-top: 100px;
+    }
+    a{
+      color: map-get($colores, color-terciario );
+      background-color: map-get($colores, color-fondo );
+      font-size: 13px;
+      font-family: "Josefin Sans", sans-serif;
+      text-decoration: none;
+      padding: 20px 40px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: all 300ms;
+      &:hover{
+          background-color: map-get($colores, color-secundario );
+          color: map-get($colores , color-texto );
+          transform: scale(1,15);
+      }
+  }
+  }
+
+
+

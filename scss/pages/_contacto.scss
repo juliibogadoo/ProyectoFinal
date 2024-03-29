@@ -1,0 +1,60 @@
+.redes {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    font-size: 55px;
+    color: map-get($colores , color-texto );
+  }
+  
+  .redes1 {
+    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 70px;
+    padding: 40px;
+    text-align: center;
+    letter-spacing: 50px;
+    font-weight: bolder;
+    margin-top: 80px;
+    margin-right: 100px;
+    a{
+      text-decoration: none;
+
+            color: map-get($colores , color-texto );
+            letter-spacing: 20px;
+            font-size: 20px;
+    }
+    i{
+      padding: 25px;
+        color: map-get($colores, color-fondo );
+
+      
+    }
+  }
+  .seccion2{
+    background: rgba(51, 51, 51, 0.7);
+    background-size: 0%;
+    padding: 8px;
+    margin-top: 50px;
+  .mensaje{
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .contenedor{
+width: 100%;
+display:flex;
+justify-content: center;
+text-align: center;
+padding:50px;
+padding-bottom: 0px;
+right: 50%;
+
+.mb-3{
+  padding: 19px;
+}
+}
+.boton{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}}
